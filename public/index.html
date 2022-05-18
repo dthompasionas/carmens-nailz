@@ -10,9 +10,9 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-dark navbar-expand-lg bg-gradient" style="background-color: #6a2a1d">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-gradient" style="background-color: #6a2a1d; padding: 10px;">
       <div class="container">
-        <a class="navbar-brand" href="#">Carmens Nailz</a>
+        <a class="navbar-brand img-fluid" href="#"><img src="/src/assets/images/cn-icon.png" alt=""></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -56,7 +56,7 @@
         <div class="row text-center g-4">
           <div class="col-md">
             <a href="#">
-              <div class="card text-light" id="card-bg" style="background: url(/src/assets/images/services.jpg);">
+              <div class="card text-light" id="card-bg">
                 <div class="card-body">
                   <h3 class="card-title">Services</h3>
                 </div>
@@ -65,7 +65,7 @@
           </div>
           <div class="col-md">
             <a href="#">
-              <div class="card text-light" style="background: url(/src/assets/images/services.jpg);">
+              <div class="card text-light">
                 <div class="card-body">
                   <h3 class="card-title">Contact Me</h3>
                 </div>
@@ -73,8 +73,8 @@
             </a>
           </div>
           <div class="col-md">
-            <a href="#">
-              <div class="card text-light" style="background: url(/src/assets/images/services.jpg);">
+            <a href="#gallery">
+              <div class="card text-light">
                 <div class="card-body">
                   <h3 class="card-title">Gallery</h3>
                 </div>
@@ -96,6 +96,7 @@
             <p class="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore saepe dicta impedit aperiam tempore fugit hic corporis debitis temporibus, sit facere illo, optio ipsum provident?
             </p>
+            <a href="#" class="btn btn-outline-warning btn-md">Learn More</a>
           </div>
         </div>
       </div>
@@ -112,9 +113,9 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="p-5" id="testimonials">
+    <section class="testimonials" id="testimonials">
       <div class="container">
-        <h2>Customer Reviews</h2>
+        <h1>Client Comments</h2>
         <div class="row text-center">
           <div class="col-md-12">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -129,7 +130,9 @@
                       <div class="single-box">
                         <div class="img-area"><img src="/src/assets/images/profile-photo-1.jpg" class="img-fluid" alt=""> </div>
                         <div class="img-text">
-                          <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores amet ab a veniam iusto nemo, qui doloremque doloribus atque officia!</p>
+                          <i class="fa-solid fa fa-quote-left" id="left"></i>
+                          <p class="lead"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores amet ab a veniam iusto nemo, qui doloremque doloribus atque officia!</p>
+                          <i class="fa-solid fa fa-quote-right" id="right"></i>
                           <h5>Ashley R.</h5>
                         </div>
                       </div>
@@ -138,7 +141,9 @@
                       <div class="single-box">
                         <div class="img-area"><img src="/src/assets/images/profile-photo-1.jpg" class="img-fluid" alt=""> </div>
                         <div class="img-text">
-                          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo veritatis iusto nobis dolorum enim? Nisi ea deserunt doloremque tempora! Molestias. </p>
+                          <i class="fa-solid fa fa-quote-left" id="left"></i>
+                          <p class="lead"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores amet ab a veniam iusto nemo, qui doloremque doloribus atque officia!</p>
+                          <i class="fa-solid fa fa-quote-right" id="right"></i>
                           <h5>Ashley R.</h5>
                         </div>
                       </div>
@@ -147,7 +152,9 @@
                       <div class="single-box">
                         <div class="img-area"><img src="/src/assets/images/profile-photo-1.jpg" class="img-fluid" alt=""> </div>
                         <div class="img-text">
-                          <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores amet ab a veniam iusto nemo, qui doloremque doloribus atque officia!</p>
+                          <i class="fa-solid fa fa-quote-left" id="left"></i>
+                          <p class="lead"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores amet ab a veniam iusto nemo, qui doloremque doloribus atque officia!</p>
+                          <i class="fa-solid fa fa-quote-right" id="right"></i>
                           <h5>Ashley R.</h5>
                         </div>
                       </div>
@@ -161,7 +168,9 @@
                       <div class="single-box">
                         <div class="img-area"><img src="/src/assets/images/profile-photo-1.jpg" class="img-fluid" alt=""> </div>
                         <div class="img-text">
-                          <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores amet ab a veniam iusto nemo, qui doloremque doloribus atque officia!</p>
+                          <i class="fa-solid fa fa-quote-left" id="left"></i>
+                          <p class="lead"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores amet ab a veniam iusto nemo, qui doloremque doloribus atque officia!</p>
+                          <i class="fa-solid fa fa-quote-right" id="right"></i>
                           <h5>Ashley R.</h5>
                         </div>
                       </div>
@@ -170,7 +179,9 @@
                       <div class="single-box">
                         <div class="img-area"><img src="/src/assets/images/profile-photo-1.jpg" class="img-fluid" alt=""> </div>
                         <div class="img-text">
-                          <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores amet ab a veniam iusto nemo, qui doloremque doloribus atque officia!</p>
+                          <i class="fa-solid fa fa-quote-left" id="left"></i>
+                          <p class="lead"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores amet ab a veniam iusto nemo, qui doloremque doloribus atque officia!</p>
+                          <i class="fa-solid fa fa-quote-right" id="right"></i>
                           <h5>Ashley R.</h5>
                         </div>
                       </div>
@@ -179,7 +190,9 @@
                       <div class="single-box">
                         <div class="img-area"><img src="/src/assets/images/profile-photo-1.jpg" class="img-fluid" alt=""> </div>
                         <div class="img-text">
-                          <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores amet ab a veniam iusto nemo, qui doloremque doloribus atque officia!</p>
+                          <i class="fa-solid fa fa-quote-left" id="left"></i>
+                          <p class="lead"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores amet ab a veniam iusto nemo, qui doloremque doloribus atque officia!</p>
+                          <i class="fa-solid fa fa-quote-right" id="right"></i>
                           <h5>Ashley R.</h5>
                         </div>
                       </div>
@@ -209,7 +222,49 @@
 
     </section>
 
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h1>Gallery</h1>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img src="/src/assets/images/gallery-1.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="/src/assets/images/gallery-2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="/src/assets/images/gallery-3.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img src="/src/assets/images/gallery-1.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="/src/assets/images/gallery-2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="/src/assets/images/gallery-3.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <h5>Follow my socials!</h5>
+        <div class="socials">
+        <a href="https://www.instagram.com/carmens_nailz/" class="insta" target="_blank">
+        <i class="fa-brands fa fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://bit.ly/3MsEi3H" class="tiktok" target="_blank">
+          <i class="fa-brands fab fa-tiktok fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/carmensnailz/" class="facebook" target="_blank">
+          <i class="fa-brands fa fa-facebook-square"></i>
+        </a>
+
+        </div>
+      </div>
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d5e113eedd.js" crossorigin="anonymous"></script>
   </body>
 </html>
