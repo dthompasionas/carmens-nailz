@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+
+.services-hero {
+    margin: 40px 200px;
+    background: #6a2a1d;
+    padding: 20px;
+}
+
+#services-hero h1 {
+    font-family: 'dancing script', cursive;
+    font-size: 60px;
+}
+
+.menu {
+    line-height: 25px;
+    padding: 60px;
+}
+
+#menu-filters ul li {
+    display: inline-block;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+#menu-filters ul li a {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #6a2a1d;
+    text-decoration: none;
+    border-radius: 0px;
+    border: 1px solid #6a2a1d;
+    cursor: pointer;
+}
+
+#menu-filters ul li a.active, #menu-filters ul li a:hover {
+    background: #6a2a1d;
+    color: #fff;
+    border: 1px;
+}
+
+.menu-restaurant {
+    width: 50%;
+    float: left;
+    padding: 15px;
+    position: relative;
+}
+
+.menu-restaurant .menu-title {
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6a2a1d;
+    text-decoration: none;
+}
+
+.menu-restaurant .menu-line {
+    position: absolute;
+    bottom: 6px;
+    border-bottom: 1px dotted
+     rgba(0,0,0,.3);
+    margin-left: .6rem ;
+    margin-right: .6rem;
+}
+
+.menu-restaurant .menu-price {
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu-restaurant .menu-subtitle {
+    display: block;
+    float: left;
+    font-size: 17px;
+}
+
+.menu-restaurant span.clearfix {
+    position: relative;
+    display: block;
+}
+
+
+
+
+ul {
+    text-decoration: none;
+}

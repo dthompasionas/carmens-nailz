@@ -1,17 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
+body {
+   color: rgb(238, 235, 235);
+}
+
 .navbar-brand img {
    height: 80px;
    width: 100px;
 }
 
 .hero {
-   height: 90vh;
+   height: 80vh;
    background: url(/src/assets/images/grass-wall.png) center;
    background-position: center center;
+   background-repeat: no-repeat;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
    background-size: cover;
    background-attachment: fixed;
 };
+
+@media (orientation: landscape) {
+   .hero {
+      height: 90vh;
+   }
+}
 
 #hero-content {
    height: 300px;
@@ -24,8 +38,9 @@
 
 .about h1 {
    color: #e0b9b2;
-   font-size: 70px;
+   font-size: 80px;
    font-family: 'dancing script', cursive;
+   text-align: center;
 }
 
 .about p {
@@ -44,15 +59,24 @@
       padding: 40px;
    }
 
+   .about h1 {
+      font-size: 70px;
+   }
+
    .about a {
       float: none;
    }
 }
 
+
 @media screen and (max-width: 540px) {
    #aboutme {
       padding: 20px;
       text-align: center;
+   }
+
+   .about h1 {
+      font-size: 70px;
    }
 
    .about a {
@@ -220,6 +244,7 @@
 
 .gallery {
    padding: 150px;
+   padding-bottom: 15px;
 }
 
 .gallery h1 {
@@ -278,6 +303,8 @@
    padding: 10px;
 }
 
+
+
 .socials .tiktok {
    font-size: 35px;
    text-decoration: none;
@@ -305,4 +332,42 @@
 }
 .socials .facebook :hover {
    color: #e0a196;
+}
+
+/* top of the page icon */
+.top-page {
+   padding: 30px;
+}
+
+.top-page .row {
+   text-align: end;
+}
+
+@media screen and (max-width: 576px) {
+   .top-page .row {
+      text-align: center;
+   }
+}
+
+.page-up-icon {
+   color: #6a2a1d;
+   font-size: 60px;
+   text-decoration: none;
+   position: relative;
+   top: 0;
+   transition: top ease 0.5s;
+}
+
+.page-up-icon:hover {
+   color: #551f14;
+   top: -10px;
+}
+
+footer {
+   background: #6a2a1d;
+}
+
+footer a {
+   text-decoration: none;
+   color: white;
 }
