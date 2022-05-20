@@ -7,6 +7,12 @@
     padding: 20px;
 }
 
+@media screen and (max-width: 992px) {
+    .services-hero {
+        margin: 40px 50px;
+    }
+}
+
 #services-hero h1 {
     font-family: 'dancing script', cursive;
     font-size: 60px;
@@ -34,7 +40,7 @@
     cursor: pointer;
 }
 
-#menu-filters ul li a.active, #menu-filters ul li a:hover {
+#menu-filters ul li a:hover {
     background: #6a2a1d;
     color: #fff;
     border: 1px;
@@ -47,12 +53,51 @@
     position: relative;
 }
 
+@media screen and (max-width: 768px) {
+    .menu-restaurant {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    
+    .services-hero {
+        margin: 40px 0px;
+    }
+
+    ul {
+        padding: 0;
+    }
+    
+    .menu {
+        padding: 40px 30px;
+    }
+
+  
+}
+
+@media screen and (max-width: 280px) {
+    .menu {
+        padding: 40px 0px;
+    }
+
+    .menu-restaurant .menu-title {
+        font-size: 14px;
+    }
+
+    .menu-restaurant .menu-subtitle {
+        font-size: 12px;
+    }
+}
+
+
 .menu-restaurant .menu-title {
     float: left;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #6a2a1d;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .menu-restaurant .menu-line {
@@ -69,12 +114,14 @@
     position: absolute;
     right: 0;
     top: 0;
+    color: #a13b26;
 }
 
 .menu-restaurant .menu-subtitle {
     display: block;
     float: left;
     font-size: 17px;
+    color: rgb(182, 169, 169);
 }
 
 .menu-restaurant span.clearfix {
