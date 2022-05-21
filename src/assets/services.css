@@ -1,137 +1,197 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 
+* {
+    padding: 0;
+    margin: 0;
+}
 
 .services-hero {
-    margin: 40px 200px;
-    background: #6a2a1d;
-    padding: 20px;
+  margin: 40px 200px;
+  background: #6a2a1d;
+  padding: 20px;
 }
 
 @media screen and (max-width: 992px) {
-    .services-hero {
-        margin: 40px 50px;
-    }
+  .services-hero {
+    margin: 40px 50px;
+  }
 }
 
 #services-hero h1 {
-    font-family: 'dancing script', cursive;
-    font-size: 60px;
+  font-family: "dancing script", cursive;
+  font-size: 60px;
 }
 
 .menu {
-    line-height: 25px;
-    padding: 60px;
+  line-height: 25px;
+  padding: 60px;
+}
+
+#menu-filters {
+  margin-bottom: 30px;
 }
 
 #menu-filters ul li {
-    display: inline-block;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    margin-bottom: 40px;
+  display: inline-block;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
 }
 
 #menu-filters ul li a {
-    padding: 10px 20px;
-    font-size: 14px;
-    color: #6a2a1d;
-    text-decoration: none;
-    border-radius: 0px;
-    border: 1px solid #6a2a1d;
-    cursor: pointer;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #6a2a1d;
+  text-decoration: none;
+  border-radius: 0px;
+  border: 1px solid #6a2a1d;
+  cursor: pointer;
 }
 
 #menu-filters ul li a:hover {
+  background: #6a2a1d;
+  color: #fff;
+  border: 1px;
+}
+
+.menu p {
+  color: #6a2a1d;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.btn:focus {
+  background: #6a2a1d;
+  border: none;
+  box-shadow: none;
+}
+
+.menu .first {
+  background: #6a2a1d;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  width: 150px;
+  font-size: 15px;
+  color: #fff;
+  transition: transform .5s ease;
+}
+
+.menu .first:hover {
+  transform: translateX(5%);
+}
+
+@media screen and (max-width: 576px) {
+  .menu .first {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+.btn {
+  color: white;
+}
+
+.menu button i {
+  padding-left: 8px;
+  margin-left: 10px;
+}
+
+.menu .first:hover {
+  background: #a13b26;
+  color: #fff;
+}
+
+#menu-filters .modal-policies li {
+    text-transform: none;
+}
+
+.menu .third {
     background: #6a2a1d;
-    color: #fff;
-    border: 1px;
+}
+
+.menu .third:hover {
+    color: white;
+    background: #a13b26;
 }
 
 .menu-restaurant {
-    width: 50%;
-    float: left;
-    padding: 15px;
-    position: relative;
+  width: 50%;
+  float: left;
+  padding: 15px;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
-    .menu-restaurant {
-        width: 100%;
-    }
+  .menu-restaurant {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 414px) {
-    
-    .services-hero {
-        margin: 40px 0px;
-    }
+  .services-hero {
+    margin: 40px 0px;
+  }
 
-    ul {
-        padding: 0;
-    }
-    
-    .menu {
-        padding: 40px 30px;
-    }
+  ul {
+    padding: 0;
+  }
 
-  
+  .menu {
+    padding: 40px 30px;
+  }
 }
 
 @media screen and (max-width: 280px) {
-    .menu {
-        padding: 40px 0px;
-    }
+  .menu {
+    padding: 40px 0px;
+  }
 
-    .menu-restaurant .menu-title {
-        font-size: 14px;
-    }
+  .menu-restaurant .menu-title {
+    font-size: 14px;
+  }
 
-    .menu-restaurant .menu-subtitle {
-        font-size: 12px;
-    }
+  .menu-restaurant .menu-subtitle {
+    font-size: 12px;
+  }
 }
 
-
 .menu-restaurant .menu-title {
-    float: left;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #6a2a1d;
-    text-decoration: none;
-    font-weight: bold;
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6a2a1d;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .menu-restaurant .menu-line {
-    position: absolute;
-    bottom: 6px;
-    border-bottom: 1px dotted
-     rgba(0,0,0,.3);
-    margin-left: .6rem ;
-    margin-right: .6rem;
+  position: absolute;
+  bottom: 6px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
 }
 
 .menu-restaurant .menu-price {
-    font-weight: 500;
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: #a13b26;
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #a13b26;
 }
 
 .menu-restaurant .menu-subtitle {
-    display: block;
-    float: left;
-    font-size: 17px;
-    color: rgb(182, 169, 169);
+  display: block;
+  float: left;
+  font-size: 17px;
+  color: rgb(182, 169, 169);
 }
 
 .menu-restaurant span.clearfix {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 }
 
-
-
-
 ul {
-    text-decoration: none;
+  text-decoration: none;
 }

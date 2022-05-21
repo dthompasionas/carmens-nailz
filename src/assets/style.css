@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 
 body {
-  color: rgb(238, 235, 235);
+  background: rgb(236, 235, 235);
+}
+
+h1 {
+  color: #fff;
 }
 
 .navbar-brand img {
@@ -33,6 +37,69 @@ body {
 #hero-content {
   height: 300px;
   border: #fff;
+}
+
+.hero #book-btn {
+  background: #551f14;
+  width: 450px;
+  padding: 20px;
+  margin-bottom: 120px;
+  color: white;
+  font-size: 30px;
+  border: none;
+  box-shadow: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero #book-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.hero #book-btn::before {
+  content: '';
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%,-50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #e0a196;
+  transition: width 0.5s, height 0.5s;
+}
+
+.hero #book-btn:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+.hero #book-btn:focus {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hero #book-btn{
+    margin-bottom: 200px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero #book-btn{
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .hero #book-btn{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 23px;
+  }
 }
 
 .about {
@@ -126,6 +193,12 @@ body {
 @media screen and (max-width: 768px) {
   .services .card-body {
     height: 300px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .services .card-body {
+    height: 200px;
   }
 }
 

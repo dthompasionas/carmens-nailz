@@ -1,370 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../src/assets/style.css" />
-    <link rel="stylesheet" href="../src/assets/services.css">
+    <link rel="stylesheet" href="../src/assets/services.css" />
     <title>Carmens Nailz</title>
-</head>
-<body>
-
-  <nav class="navbar navbar-dark navbar-expand-lg bg-gradient" style="background-color: #6a2a1d; padding: 10px;">
-        <div class="container">
-          <a class="navbar-brand img-fluid" href="#"><img src="/src/assets/images/cn-icon.png" alt=""></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarMenu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="/public/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/public/about.html">About me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/public/index.html#gallery">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://bit.ly/3PmlogV" target="_blank">Book Now</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-  </nav>
-
-  <section class="services-hero bg-gradient">
-    <div class="container text-center" id="services-hero">
-      <h1>Services</h1>
-    </div>
-  </section>
-
-  <!-- menu list -->
-  <section class="menu" id="menu-list">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center" id="menu-filters">
-          <ul>
-            <li><a class="filter active" data-filter="all">Show All</a></li>
-            <li><a class="filter" data-filter="acrylic-nails">Acrylic Nails</a></li>
-            <li><a class="filter" data-filter="nail-art">Nail Art/Add Ons</a></li>
-            <li><a class="filter" data-filter="shapes-length">Shapes/Length</a></li>
-            <li><a class="filter" data-filter="removal">Removal</a></li>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-dark navbar-expand-lg bg-gradient"
+      style="background-color: #6a2a1d; padding: 10px"
+    >
+      <div class="container">
+        <a class="navbar-brand img-fluid" href="#"
+          ><img src="/src/assets/images/cn-icon.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/public/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/public/about.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/public/index.html#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://bit.ly/3PmlogV" target="_blank"
+                >Book Now</a
+              >
+            </li>
           </ul>
         </div>
+      </div>
+    </nav>
 
-        <div class="menu-wrapper">
-          <div class="acrylic-nails menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">Full set/overlay</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$45+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="acrylic-nails menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">Color Acrylic full </a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$55+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="acrylic-nails menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">Glow acrylic full</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$65+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="acrylic-nails menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">nude & white ombre</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$60+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="acrylic-nails menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">color ombre full</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$65+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="acrylic-nails menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">glow ombre full</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$75+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="acrylic-nails menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">fill in 3 weeks</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$30+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="acrylic-nails menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">fill in 4 weeks</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$35+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="acrylic-nails menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">apres gel-x system</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$50+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div> <!--end of Acrylic nails-->
-
-          
-
-          <!-- nail-art -->
-          <div class="nail-art menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">color acrylic</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$5+</span>
-            </span>
-            <span class="menu-subtitle">Price is per color.</span>
-          </div>
-          <div class="nail-art menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">3d flower</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$5+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="nail-art menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">gems/crystals</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$55+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="nail-art menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">sticker/decals</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$2.50+</span>
-            </span>
-            <span class="menu-subtitle">Price per nail.</span>
-          </div>
-          <div class="nail-art menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">painted art</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$5+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="nail-art menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">encapsulation</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$10+</span>
-            </span>
-            <span class="menu-subtitle">Price per nail.</span>
-          </div>
-          <div class="nail-art menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">Gel polish</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$15+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="nail-art menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">cat eye polish</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$20+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="nail-art menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">sugar scrub</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$10+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div> <!--End of Nail-art-->
-
-
-
-          <!-- Shapes-length -->
-          <div class="shapes-length menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">Square or coffin</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$10+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="shapes-length menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">almond or oval</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$15+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="shapes-length menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">stiletto</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$15+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="shapes-length menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">medium long</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$10+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="shapes-length menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">extra long</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$20+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div> <!--end of shapes-length-->
-
-
-          <!-- Removal -->
-
-          <div class="removal menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">gel-x/dip/gel polish</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$5+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="removal menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">acrylic</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$20+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-          <div class="removal menu-restaurant">
-            <span class="clearfix">
-              <a href="#" class="menu-title" data-meal-img="">cut down</a>
-              <span style="left: 166px; right: 44px" class="menu-line"></span>
-              <span class="menu-price">$5+</span>
-            </span>
-            <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
-          </div>
-
-        </div> <!--End menu wrapper-->
-
-      </div><!--end row-->
-    </div> <!--End container-->
-  </section> 
-  <!-- End of menu section -->
-
-  <!-- Footer -->
-  <footer class="p-5">
-    <section>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-3 col-lg-3 col-xl-3">
-            <h6 class="text-uppercase">Carmens Nailz</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, deleniti. Vitae possimus blanditiis dolore quaerat.
-            </p>
-          </div>
-
-          <div class="col-md-2 col-lg-2 col-xl-3">
-            <h6 class="text-uppercase">Useful Links</h6>
-            <p>
-              <a href="/public/services.html">Services</a>
-            </p>
-            <p>
-              <a href="/public/services.html">Services</a>
-            </p>
-            <p>
-              <a href="/public/services.html">Services</a>
-            </p>
-            <p>
-              <a href="/public/services.html">Services</a>
-            </p>
-          </div>
-
-          <div class="col-md-3 col-lg-3 col-xl-3">
-            <h6 class="text-uppercase">Contact</h6>
-            <p><i class="fa-solid fa fa-building"></i><a href="https://bit.ly/3woHg3M" target="_blank"> 303 Broadway Ave, Kissimmee FL, 34741</a>
-            </p>
-            <p>
-            <a href="mailto:Carmensnailz@gmail.com"><i class="fa-light fa fa-envelope"></i> Carmensnailz@gmail.com
-            </a>
-            </p>
-            <p>
-            <a href="tel:8455379910"><i class="fa-solid fa fa-phone"></i> (845)537-9910</a>
-            </p>
-          </div>
-
-          <div class="col-md-4 col-lg-4 col-xl-3" id="google">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d522.2306368967525!2d-81.4058064657995!3d28.294235480527714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd843d78a40b85%3A0x8edaee73fd6cdd4f!2sAngel%20Nail%20Spa!5e0!3m2!1sen!2sus!4v1653006056671!5m2!1sen!2sus" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
+    <section class="services-hero bg-gradient">
+      <div class="container text-center" id="services-hero">
+        <h1>Services</h1>
       </div>
     </section>
 
-    <div class="text-center p-4">
-      © 2022 Carmens Nailz LLC
-    </div>
-  </footer>
-  <!-- End Footer -->
-    
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://kit.fontawesome.com/d5e113eedd.js" crossorigin="anonymous"></script>
+    <!-- menu list -->
+    <section class="menu" id="menu-list">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center" id="menu-filters">
+            <ul>
+              <li><a class="filter active" data-filter="all">Show All</a></li>
+              <li>
+                <a class="filter" data-filter="acrylic-nails">Acrylic Nails</a>
+              </li>
+              <li>
+                <a class="filter" data-filter="nail-art">Nail Art/Add Ons</a>
+              </li>
+              <li>
+                <a class="filter" data-filter="shapes-length">Shapes/Length</a>
+              </li>
+              <li><a class="filter" data-filter="removal">Removal</a></li>
+            </ul>
+            <p>Please read the policies below before booking.</p>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn first"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Policies
+              <i class="fas fa-arrow-right"></i>
+            </button>
 
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.filter').click(function() {
-        const value = $(this).attr('data-filter');
-        if (value == 'all') {
-          $('.menu-restaurant').show('1000');
-        } else {
-          $('.menu-restaurant').not('.'+value).hide('1000');
-          $('.menu-restaurant').filter('.'+value).show('1000');
-        }
-      })
-    })
-  </script>
-</body>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Salon Policies
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body text-start">
+                    <p>Please reach out via Text or Email with any questions, concerns or rescheduling. </p>
+                    <ul class="modal-policies">
+                      
+                      <li>• Due to limited space, we ask that all clients come alone. <strong>No children allowed</strong>.</li>
+
+                      <li>• If you are feeling ill in any way (e.g, a cold, or allergies) you <strong>MUST</strong> wear a mask. Covid or Flu, please stay home for the safety of both of us.</li>
+
+                      <li>• Soak offs are $20 and absolutely no file downs. If you need a soak off please let me know in advance.</li>
+
+                      <li>• There is a $20 <strong>non-refundable</strong> deposit required. This deposit will go toward your service at the time of checkout.</li>
+
+                      <li>• <strong>Rescheduling</strong> needs to be done at least <strong>48hrs</strong> before your appointment. If any rescheduling is done less than 48hrs from your appointment, you <strong>lose</strong> your deposit.</li>
+
+                      <li>• If you're running late please let me know with a Text. You are allowed a <strong>15 minute grace period</strong>. If you arrive past the 15 minutes and I have not okayed this; you will lose your deposit and may lose the appointment.</li>
+
+                      <li>• No shows will <strong>NOT</strong> be tolerated! If I do not receive a text from you letting me know you cannot make it, before your appointment time; You will be blocked from making future appointments.</li>
+                    </ul>
+                    <p>Thank you in advance for your business!<br/> -Carmen 😊</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn third" data-bs-dismiss="modal">
+                      Understood
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-wrapper">
+            <div class="acrylic-nails menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >Full set/overlay</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$45+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="acrylic-nails menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >Color Acrylic full
+                </a>
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$55+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="acrylic-nails menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >Glow acrylic full</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$65+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="acrylic-nails menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >nude & white ombre</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$60+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="acrylic-nails menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >color ombre full</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$65+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="acrylic-nails menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >glow ombre full</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$75+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="acrylic-nails menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >fill in 3 weeks</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$30+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="acrylic-nails menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >fill in 4 weeks</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$35+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="acrylic-nails menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >apres gel-x system</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$50+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <!--end of Acrylic nails-->
+
+            <!-- nail-art -->
+            <div class="nail-art menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >color acrylic</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$5+</span>
+              </span>
+              <span class="menu-subtitle">Price is per color.</span>
+            </div>
+            <div class="nail-art menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img="">3d flower</a>
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$5+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="nail-art menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >gems/crystals</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$55+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="nail-art menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >sticker/decals</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$2.50+</span>
+              </span>
+              <span class="menu-subtitle">Price per nail.</span>
+            </div>
+            <div class="nail-art menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img="">painted art</a>
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$5+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="nail-art menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >encapsulation</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$10+</span>
+              </span>
+              <span class="menu-subtitle">Price per nail.</span>
+            </div>
+            <div class="nail-art menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img="">Gel polish</a>
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$15+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="nail-art menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >cat eye polish</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$20+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="nail-art menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img="">sugar scrub</a>
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$10+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <!--End of Nail-art-->
+
+            <!-- Shapes-length -->
+            <div class="shapes-length menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >Square or coffin</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$10+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="shapes-length menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >almond or oval</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$15+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="shapes-length menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img="">stiletto</a>
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$15+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="shapes-length menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img="">medium long</a>
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$10+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="shapes-length menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img="">extra long</a>
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$20+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <!--end of shapes-length-->
+
+            <!-- Removal -->
+
+            <div class="removal menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img=""
+                  >gel-x/dip/gel polish</a
+                >
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$5+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="removal menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img="">acrylic</a>
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$20+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="removal menu-restaurant">
+              <span class="clearfix">
+                <a href="#" class="menu-title" data-meal-img="">cut down</a>
+                <span style="left: 166px; right: 44px" class="menu-line"></span>
+                <span class="menu-price">$5+</span>
+              </span>
+              <span class="menu-subtitle">Lorem ipsum dolor sit amet.</span>
+            </div>
+          </div>
+          <!--End menu wrapper-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--End container-->
+    </section>
+    <!-- End of menu section -->
+
+    <!-- Footer -->
+    <footer class="p-5">
+      <section>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3">
+              <h6 class="text-uppercase">Carmens Nailz</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, deleniti. Vitae possimus blanditiis dolore quaerat.
+              </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-3">
+              <h6 class="text-uppercase">Useful Links</h6>
+              <p>
+                <a href="/public/services.html">Services</a>
+              </p>
+              <p>
+                <a href="/public/services.html">Services</a>
+              </p>
+              <p>
+                <a href="/public/services.html">Services</a>
+              </p>
+              <p>
+                <a href="/public/services.html">Services</a>
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-3 col-xl-3">
+              <h6 class="text-uppercase">Contact</h6>
+              <p>
+                <i class="fa-solid fa fa-building"></i
+                ><a href="https://bit.ly/3woHg3M" target="_blank">
+                  303 Broadway Ave, Kissimmee FL, 34741</a
+                >
+              </p>
+              <p>
+                <a href="mailto:Carmensnailz@gmail.com"
+                  ><i class="fa-light fa fa-envelope"></i>
+                  Carmensnailz@gmail.com
+                </a>
+              </p>
+              <p>
+                <a href="tel:8455379910"
+                  ><i class="fa-solid fa fa-phone"></i> (845)537-9910</a
+                >
+              </p>
+            </div>
+
+            <div class="col-md-4 col-lg-4 col-xl-3" id="google">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d522.2306368967525!2d-81.4058064657995!3d28.294235480527714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd843d78a40b85%3A0x8edaee73fd6cdd4f!2sAngel%20Nail%20Spa!5e0!3m2!1sen!2sus!4v1653006056671!5m2!1sen!2sus"
+                width="250"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center p-4">© 2022 Carmens Nailz LLC</div>
+    </footer>
+    <!-- End Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d5e113eedd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".filter").click(function () {
+          const value = $(this).attr("data-filter");
+          if (value == "all") {
+            $(".menu-restaurant").show("1000");
+          } else {
+            $(".menu-restaurant")
+              .not("." + value)
+              .hide("1000");
+            $(".menu-restaurant")
+              .filter("." + value)
+              .show("1000");
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
