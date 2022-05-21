@@ -244,6 +244,10 @@ h1 {
   font-size: 60px;
 }
 
+.checked {
+  color: rgb(235, 192, 3);
+}
+
 .carousel-inner .img-text {
   height: 300px;
   padding: 20px;
@@ -274,11 +278,17 @@ h1 {
   }
 
   .carousel-inner .img-text {
-    height: 300px;
+    height: 400px;
   }
 
   .carousel-inner .img-text h5 {
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .carousel-inner .img-text {
+    height: 300px;
   }
 }
 
