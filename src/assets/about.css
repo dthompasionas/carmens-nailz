@@ -7,7 +7,7 @@
 
 
 .about-content {
-    padding: 30px 120px 70px 120px;
+    padding: 50px 180px 100px 180px;
 }
 
 .about-content p {
@@ -19,6 +19,7 @@
 
 .about-content img {
     height: auto;
+    box-shadow: gray 2px 5px 10px 0px;
 }
 
 .about-content p {
@@ -26,8 +27,12 @@
     
 }
 
+.about-content #about-img {
+    padding: 50px;
+}
+
 .choose-me {
-    padding: 30px;
+    padding: 70px;
 }
 
 .choose-me h1 {
@@ -35,7 +40,7 @@
     font-size: 50px;
     color: #e0b9b2;
     font-family: "dancing script", cursive;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .choose-me .card {

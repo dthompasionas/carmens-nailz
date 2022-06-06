@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+
+
+.contact-me {
+    padding: 50px;
+}
+
+.email {
+    background: #fff;
+    padding: 20px;
+}
+
+.reach {
+    background: #6a2a1d;
+    color: #fff;
+    padding: 20px;
+}
+
+form {
+    padding: 30px;
+}
+
+form .btn {
+    background-color: #6a2a1d;
+    border: none;
+}
+
+form .btn:hover {
+    background-color: #6a2a1d;
+    color: #fff;
+}
