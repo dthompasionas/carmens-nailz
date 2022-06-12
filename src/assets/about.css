@@ -33,12 +33,48 @@
   padding: 70px;
 }
 
+.choose-me .content {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-size: 20px;
+  color: white;
+  
+}
+
 .choose-me h1 {
   text-align: center;
   font-size: 50px;
   color: #e0b9b2;
   font-family: "dancing script", cursive;
   padding-bottom: 40px;
+}
+
+.choose-me .card {
+  background-color: #e0b9b2;
+  border: none;
+  text-align: center;
+}
+
+.choose-me .content:hover {
+  font-size: 0;
+}
+
+.choose-me .content:hover:after {
+  content: attr(data-hover);
+  font-size: 20px;
+  line-height: 28px;
+  transition-duration: 500ms;
+  
+}
+
+.choose-me .card:hover {
+  background: rgb(219, 217, 217);
+  color: #6a2a1d;
+  cursor: pointer;
+  
 }
 
 @media screen and (max-width: 1200px) {
@@ -131,18 +167,7 @@
     }
 }
 
-.choose-me .card {
-  background-color: #e0b9b2;
-  border: none;
-}
 
-.choose-me .card:hover {
-  background: rgb(219, 217, 217);
-  color: #6a2a1d;
-  cursor: pointer;
-}
 
-.choose-me h5 {
-  padding: 50px;
-  text-align: center;
-}
+
+
