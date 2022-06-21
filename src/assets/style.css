@@ -20,14 +20,10 @@ h1 {
 
 .hero {
   height: 835px;
-  background: url(/src/assets/images/grass-wall.png) center;
+  background: url(/src/assets/images/carmen-sign.png) center;
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 @media screen and (max-width: 640px) {
@@ -176,6 +172,19 @@ h1 {
   border-radius: 15px;
   background-size: cover;
   border: none;
+  transition: 100ms ease-in;
+}
+
+.services #service {
+
+}
+
+.services #contact-me {
+  background: url(/src/assets/images/carmen-working2.png) center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  
 }
 
 .services .card-body {
@@ -183,6 +192,11 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+.services .card:hover {
+  margin-top: 5px;
+  box-shadow: gray 3px 3px 3px 3px;
 }
 
 @media screen and (max-width: 992px) {
@@ -347,7 +361,7 @@ h1 {
 
 /* index-2 */
 .index-2 {
-  background: url(/src/assets/images/index-image-2.jpg) center;
+  background: url(/src/assets/images/tickled-pinque.png) center;
   height: 40vh;
   background-attachment: fixed;
   background-size: cover;
@@ -379,6 +393,20 @@ h1 {
 
 .gallery img {
   padding: 17px 10px;
+  
+}
+
+#gallery-1 {
+  height: 297px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+#gallery-3 {
+  height: 297px;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1080px) {
@@ -443,13 +471,18 @@ h1 {
 }
 
 /* top of the page icon */
-.top-page {
-  padding: 30px;
+/* .top-page {
+  padding: 30px; 
+} */
+
+.totop {
+  position: fixed;
+
 }
 
-.top-page .row {
+/* .top-page .row {
   text-align: end;
-}
+} */
 
 @media screen and (max-width: 576px) {
   .top-page .row {
@@ -457,7 +490,7 @@ h1 {
   }
 }
 
-.page-up-icon {
+/* .page-up-icon {
   color: #6a2a1d;
   font-size: 60px;
   text-decoration: none;
@@ -469,7 +502,7 @@ h1 {
 .page-up-icon:hover {
   color: #551f14;
   top: -10px;
-}
+} */
 
 footer {
   background: #6a2a1d;
