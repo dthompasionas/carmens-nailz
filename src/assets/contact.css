@@ -39,6 +39,12 @@ form .btn:hover {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .contact-me {
+    padding: 30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .google {
     display: flex;
@@ -56,6 +62,14 @@ form .btn:hover {
 @media screen and (max-width: 375px) {
   .google {
     overflow: hidden;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  .contact-me {
+    padding: 10px;
   }
 }
 

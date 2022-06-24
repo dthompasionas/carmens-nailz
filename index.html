@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-dark navbar-expand-lg bg-gradient" style="background-color: #6a2a1d; padding: 10px;">
+    <nav class="navbar fixed-top navbar-expand-lg" style="padding: 10px;">
       <div class="container">
         <a class="navbar-brand img-fluid" href="#"><img src="/src/assets/images/cn-icon.png" alt=""></a>
         <button
@@ -21,7 +21,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarMenu">
+        <div class="collapse navbar-collapse " id="navbarMenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">Home</a>
@@ -47,11 +47,19 @@
     </nav>
 
     <!-- Hero -->
-    <section class="hero">
-      <div class="container p-5 d-flex justify-content-center align-items-end" id="hero-content" style="height: 100%;">
-        <a href="https://bit.ly/3PmlogV" target="_blank" class="btn btn-outline-warning btn-lg" id="book-btn"><span>Book Now</span></a>
+    <section class="hero w-100 d-flex justify-content-center align-items-center">
+      <div class="container p-5 d-flex justify-content-center align-items-end" id="hero-content">
+      <a href="https://bit.ly/3PmlogV" target="_blank" class="btn btn-outline-warning btn-lg" id="book-btn"><span>Book Now</span></a>
       </div>
+
+      <!-- Wave image in the hero -->
+      <div class="wave">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
     </section>
+      
 
     <!-- services -->
     <section class="services">
@@ -77,7 +85,7 @@
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4">
             <a href="#gallery">
-              <div class="card text-light" id="gallery">
+              <div class="card text-light" id="gallery-card">
                 <div class="card-body">
                   <h3 class="card-title">Gallery</h3>
                 </div>
@@ -97,7 +105,7 @@
           </div>
           <div class="col-md-7 col-sm-12 p-5">
             <p class="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore saepe dicta impedit aperiam tempore fugit hic corporis debitis temporibus, sit facere illo, optio ipsum provident? 
+              I'm originally from the Bronx, New York, now based in central Florida. I've done nails for over 8 years now and continue to grow my experience and knowledge. I have worked with and learned from some of the best in the industry and can't wait to show you what I got.    
             </p>
             <a href="/public/about.html" class="btn btn-outline-warning btn-md">Learn More</a>
           </div>
@@ -107,12 +115,16 @@
 
     <!-- index photo -->
     <section class="index-1 p-5">
+      <!-- <div class="custom-shape-divider-top-1655953427">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+      </div> -->
       <div class="container p-5 d-flex justify-content-center align-items-center text-light">
         <h2 class="index-title">
          You look great! 
         </h2>
       </div>
-
     </section>
 
     <!-- Testimonials -->
@@ -268,31 +280,30 @@
     </section>
 
     <section class="gallery" id="gallery">
-      <div class="container">
+      <div class="container-lg">
         <h1>Gallery</h1>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <img src="/src/assets/images/gallery-1.png" class="img-fluid" alt="" id="gallery-1">
+        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <div class="col">
+            <img src="/src/assets/images/gallery-1.png" class="gallery-item" alt="splatter paint nails" id="gallery-1">
           </div>
-          <div class="col-md-4">
-            <img src="/src/assets/images/gallery-2.jpg" class="img-fluid" alt="" id="gallery-2">
+          <div class="col">
+            <img src="/src/assets/images/gallery-2.jpg" class="gallery-item" alt="" id="gallery-2">
           </div>
-          <div class="col-md-4">
-            <img src="/src/assets/images/tesla-hand.png" class="img-fluid" alt="" id="gallery-3">
+          <div class="col">
+            <img src="/src/assets/images/gallery-3.png" class="gallery-item" alt="tye dye nails on tesla steering wheel" id="gallery-3">
           </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <img src="/src/assets/images/gallery-1.png" class="img-fluid" alt="">
+          <div class="col">
+            <img src="/src/assets/images/gallery-4.png" class="gallery-item" alt="" id="gallery-2">
           </div>
-          <div class="col-md-4">
-            <img src="/src/assets/images/gallery-2.jpg" class="img-fluid" alt="">
+          <div class="col">
+            <img src="/src/assets/images/gallery-5.jpg" class="gallery-item" alt="" id="gallery-2">
           </div>
-          <div class="col-md-4">
-            <img src="/src/assets/images/gallery-3.jpg" class="img-fluid" alt="">
+          <div class="col">
+            <img src="/src/assets/images/gallery-6.png" class="gallery-item" alt="" id="gallery-2">
           </div>
         </div>
-        <h5>Follow my socials!</h5>
+        </div>
+        <h5>Follow my socials for more!</h5>
         <div class="socials">
         <a href="https://www.instagram.com/carmens_nailz/" class="insta" target="_blank">
         <i class="fa-brands fa fa-instagram fa-2x"></i>
@@ -328,23 +339,23 @@
           <div class="row">
             <div class="col-md-3 col-lg-3 col-xl-3">
               <h6 class="text-uppercase">Carmens Nailz</h6>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, deleniti. Vitae possimus blanditiis dolore quaerat.
+              <p>Originally from the Bronx, New York. I've done nails for over 8 years now and continue to grow my experience and knowledge. 
               </p>
             </div>
   
             <div class="col-md-2 col-lg-2 col-xl-3">
               <h6 class="text-uppercase">Useful Links</h6>
               <p>
-                <a href="/public/services.html">Services</a>
+                <a href="/public/about.html">About Me</a>
               </p>
               <p>
                 <a href="/public/services.html">Services</a>
               </p>
               <p>
-                <a href="/public/services.html">Services</a>
+                <a href="/public/contact.html">Contact Me</a>
               </p>
               <p>
-                <a href="/public/services.html">Services</a>
+                <a href="https://bit.ly/3PmlogV" target="_blank">Book Now</a>
               </p>
             </div>
   

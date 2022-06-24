@@ -13,17 +13,81 @@ h1 {
   color: #fff;
 }
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28236, 235, 235, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler-icon:focus {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+
 .navbar-brand img {
   height: 80px;
   width: 100px;
 }
 
+.navbar-nav {
+  /* width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end; */
+}
+
+.nav-link {
+  color: rgb(236, 235, 235);
+  font-size: 20px;
+  position: relative;
+  margin-left: 15px;
+  letter-spacing: 0.8px;
+  padding: 0 8px;
+}
+
+/* animated underline */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  background-color: rgb(221, 51, 130);
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+
+/* hero */
 .hero {
-  height: 835px;
+  height: 910px;
   background: url(/src/assets/images/carmen-sign.png) center;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0)), url(/src/assets/images/carmen-sign.png);
+}
+
+@media screen and (max-width: 992px) {
+  
 }
 
 @media screen and (max-width: 640px) {
@@ -33,16 +97,16 @@ h1 {
 }
 
 #hero-content {
-  height: 300px;
+  height: 100%;
   border: #fff;
 }
 
 .hero #book-btn {
-  background: #551f14;
+  background: rgb(221, 51, 130);
   width: 450px;
   padding: 20px;
   margin-bottom: 120px;
-  color: white;
+  color: rgb(236, 235, 235);
   font-size: 30px;
   border: none;
   box-shadow: none;
@@ -64,25 +128,66 @@ h1 {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background: #e0a196;
+  background: rgb(236, 235, 235);
   transition: width 0.5s, height 0.5s;
+}
+
+.hero #book-btn:hover {
+  color: rgb(221, 51, 130);
 }
 
 .hero #book-btn:hover::before {
   width: 400px;
   height: 400px;
+  
 }
 
 .hero #book-btn:focus {
   box-shadow: none;
 }
 
-@media screen and (max-width: 768px) {
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 144px;
+}
+
+.wave .shape-fill {
+  fill: rgb(236, 235, 235);
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .wave svg {
+      width: calc(100% + 1.3px);
+      height: 106px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .wave svg {
+      width: calc(106% + 1.3px);
+      height: 64px;
+  }
+
   .hero #book-btn {
     margin-bottom: 200px;
     padding: 20px;
   }
 }
+  
 
 @media screen and (max-width: 640px) {
   .hero #book-btn {
@@ -99,6 +204,8 @@ h1 {
   }
 }
 
+
+/* About section */
 .about {
   padding: 150px 169px;
 }
@@ -175,6 +282,12 @@ h1 {
   transition: 100ms ease-in;
 }
 
+.services .card:hover {
+  margin-top: 5px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+
+
 .services #service {
 
 }
@@ -194,38 +307,39 @@ h1 {
   align-items: flex-end;
 }
 
-.services .card:hover {
-  margin-top: 5px;
-  box-shadow: gray 3px 3px 3px 3px;
-}
-
 @media screen and (max-width: 992px) {
   .services .card-body {
     height: 250px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .services .card-body {
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 767px) {
   .services .card-body {
     height: 200px;
   }
+
+  .services #contact-me {
+    background-size: cover;
+  }
 }
+
 
 @media screen and (max-width: 576px) {
   .services {
     padding: 30px 130px;
+  
   }
 }
 
 @media screen and (max-width: 560px) {
   .services {
     padding: 40px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .services .card-body {
+    height: 200px;
   }
 }
 
@@ -239,11 +353,49 @@ h1 {
   height: 40vh;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
 }
 
 .index-1 .container {
   height: 100%;
 }
+
+.custom-shape-divider-top-1655953427 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1655953427 svg {
+  position: relative;
+  display: block;
+  width: calc(112% + 1.3px);
+  height: 62px;
+}
+
+.custom-shape-divider-top-1655953427 .shape-fill {
+  fill: rgb(236, 235, 235);
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-1655953427 svg {
+      width: calc(108% + 1.3px);
+      height: 69px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1655953427 svg {
+      width: calc(102% + 1.3px);
+      height: 28px;
+  }
+}
+
 
 /* testimonial carousel */
 .testimonials {
@@ -376,7 +528,7 @@ h1 {
 .gallery h1 {
   display: flex;
   justify-content: center;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   color: #e0b9b2;
   font-family: "dancing script", cursive;
   font-size: 60px;
@@ -386,28 +538,26 @@ h1 {
   display: flex;
   justify-content: center;
   padding-bottom: 15px;
+  padding-top: 50px;
   color: #e0b9b2;
   font-family: "dancing script", cursive;
-  font-size: 40px;
+  font-size: 70px;
+}
+
+img {
+  max-width: 100%;
 }
 
 .gallery img {
-  padding: 17px 10px;
-  
-}
-
-#gallery-1 {
-  height: 297px;
+  background-color: #fff;
+  padding: 15px;
   width: 100%;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+  height: 380px;
   object-fit: cover;
+  object-position: center;
 }
 
-
-#gallery-3 {
-  height: 297px;
-  width: 100%;
-  object-fit: cover;
-}
 
 @media screen and (max-width: 1080px) {
   .gallery {
@@ -434,6 +584,7 @@ h1 {
 .socials {
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 .socials .insta {
