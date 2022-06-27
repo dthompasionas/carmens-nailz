@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 
+
+.shadow {
+  box-shadow: 0 0 0 15px;
+}
+
 .contact-me {
   padding: 50px;
 }
@@ -10,7 +15,6 @@
 }
 
 .reach {
-  background: #6a2a1d;
   color: #fff;
   padding: 20px;
 }

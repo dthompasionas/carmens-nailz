@@ -5,9 +5,15 @@
   margin: 0;
 }
 
+.services-hero {
+  margin-top: 140px;
+  background-color: #e0b9b2;
+}
+
 .about-content {
   padding: 50px 180px 100px 180px;
 }
+
 
 
 .about-content p {
@@ -29,20 +35,60 @@
   padding: 50px;
 }
 
+
+/* why choose me section */
+
 .choose-me {
   padding: 70px;
 }
 
-.choose-me .content {
+.choose-me .card {
+  border: none;
+  text-align: center;
+  overflow-x: visible;
+  transition: transform 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+#card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.choose-me figure {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 0;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.choose-me .front {
+  background-color: #e0b9b2;;
+  color: #fff;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "dancing script", cursive;
+  padding: 50px;
+  font-size: 40px;
+}
+
+.choose-me .back {
+  background-color:#292b2c;
+  color: #fff;
   height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px;
-  font-size: 20px;
-  color: white;
-  
+  font-size: 18px;
+  position: absolute;
+  transform: rotateY(180deg);
 }
+
+
 
 .choose-me h1 {
   text-align: center;
@@ -52,30 +98,7 @@
   padding-bottom: 40px;
 }
 
-.choose-me .card {
-  background-color: #e0b9b2;
-  border: none;
-  text-align: center;
-}
 
-.choose-me .content:hover {
-  font-size: 0;
-}
-
-.choose-me .content:hover:after {
-  content: attr(data-hover);
-  font-size: 20px;
-  line-height: 28px;
-  transition-duration: 500ms;
-  
-}
-
-.choose-me .card:hover {
-  background: rgb(219, 217, 217);
-  color: #6a2a1d;
-  cursor: pointer;
-  
-}
 
 @media screen and (max-width: 1200px) {
     .about-content #about-img {
@@ -90,6 +113,10 @@
     .choose-me {
       padding: 30px;
       padding-bottom: 40px;
+    }
+
+    .choose-me .back {
+      font-size: 15px;
     }
 
 }
@@ -107,6 +134,10 @@
     .choose-me {
       padding: 30px;
       padding-bottom: 40px;
+    }
+
+    .choose-me .back {
+      font-size: 17px;
     }
 
 }
@@ -148,6 +179,10 @@
       padding-bottom: 40px;
     }
 
+    .choose-me h2 {
+      font-size: 40px;
+    }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -167,6 +202,12 @@
     }
 }
 
+
+@media screen and (max-width: 280px) {
+  .choose-me .back {
+    font-size: 15px;
+  }
+}
 
 
 

@@ -1,13 +1,17 @@
 const btn = document.querySelector('#book-btn');
 let nav = document.querySelector('nav');
+let iconUp = document.querySelector('totop');
+
 
 
 // adding a the change of the navbar background on scroll
 window.addEventListener('scroll', function() {
     if(window.pageYOffset > 100) {
-        nav.classList.add('bg-dark', 'shadow');
+        nav.classList.add('bg-dark', 'bg-gradient', 'shadow');
+        iconUp.classList.remove('d-none');
     }else {
-        nav.classList.remove('bg-dark','shadow');
+        nav.classList.remove('bg-dark', 'bg-gradient', 'shadow');
+        
     }
 })
 

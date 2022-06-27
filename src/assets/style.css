@@ -36,21 +36,13 @@ h1 {
   width: 100px;
 }
 
-.navbar-nav {
-  /* width: 100%;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: end; */
-}
 
 .nav-link {
   color: rgb(236, 235, 235);
   font-size: 20px;
   position: relative;
-  margin-left: 15px;
-  letter-spacing: 0.8px;
-  padding: 0 8px;
+  padding: 2px 15px;
+  
 }
 
 /* animated underline */
@@ -73,7 +65,16 @@ h1 {
   width: 100%;
 }
 
+@media screen and (max-width: 992px) {
+  .nav-link {
+    padding: 10px;
+    
+  }
 
+  .nav-link:hover::after {
+    width: 30%;
+  }
+}
 
 /* hero */
 .hero {
@@ -86,9 +87,7 @@ h1 {
   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0)), url(/src/assets/images/carmen-sign.png);
 }
 
-@media screen and (max-width: 992px) {
-  
-}
+
 
 @media screen and (max-width: 640px) {
   .hero {
@@ -99,7 +98,11 @@ h1 {
 #hero-content {
   height: 100%;
   border: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
+
 
 .hero #book-btn {
   background: rgb(221, 51, 130);
@@ -146,6 +149,12 @@ h1 {
   box-shadow: none;
 }
 
+@media (max-width: 992px) {
+  #hero-content {
+    align-items: center;
+  }
+}
+
 .wave {
   position: absolute;
   bottom: 0;
@@ -187,7 +196,23 @@ h1 {
     padding: 20px;
   }
 }
-  
+
+
+@media screen and (max-width: 988px) {
+  .hero {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0)), url(/src/assets/images/carmens-room.png);
+    background-position: left;
+  }
+}
+
+ 
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0)), url(/src/assets/images/carmens-room.png);
+    background-position: left;
+  }
+}
+
 
 @media screen and (max-width: 640px) {
   .hero #book-btn {
@@ -196,11 +221,21 @@ h1 {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .hero {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0)), url(/src/assets/images/carmens-room.png);
+  }
+}
+
 @media screen and (max-width: 375px) {
   .hero #book-btn {
     margin-bottom: 20px;
     padding: 10px;
     font-size: 23px;
+  }
+
+  .hero {
+    background-position: left;
   }
 }
 
@@ -224,6 +259,15 @@ h1 {
 
 .about a {
   float: right;
+  background-color: #e0a196;
+  color: rgb(236, 235, 235);
+  border: none;
+}
+
+.about a:hover {
+  background-color: #df8474;
+  color: rgb(236, 235, 235);
+  margin-top: 2px;
 }
 
 @media screen and (max-width: 912px) {
@@ -275,25 +319,40 @@ h1 {
 }
 
 .services .card {
-  background: url(/src/assets/images/services.jpg) center;
   border-radius: 15px;
   background-size: cover;
   border: none;
   transition: 100ms ease-in;
 }
 
+.services h3 {
+  font-family: "dancing script", cursive;
+  font-size: 40px;
+}
+
+
 .services .card:hover {
   margin-top: 5px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+
+}
+
+.services #service {
+  background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.6)), url(/src/assets/images/desk.png);
+  background-position: center;
+  transition: 100ms ease-in;
 }
 
 
-.services #service {
-
+.services #gallery-card {
+  background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.6)), url(/src/assets/images/gallery-1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .services #contact-me {
-  background: url(/src/assets/images/carmen-working2.png) center;
+  background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.6)), url(/src/assets/images/carmen-working2.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
@@ -321,6 +380,16 @@ h1 {
   .services #contact-me {
     background-size: cover;
   }
+  .services #service {
+    background-size: cover;
+  }
+  .services #gallery-card {
+    background-size: cover;
+  }
+
+  .services h3 {
+    font-size: 30px;
+  }
 }
 
 
@@ -328,6 +397,10 @@ h1 {
   .services {
     padding: 30px 130px;
   
+  }
+
+  .services h3 {
+    font-size: 40px;
   }
 }
 
@@ -520,10 +593,15 @@ h1 {
   margin-top: 20px;
 }
 
+
+/* Gallery */
+
 .gallery {
   padding: 150px;
   padding-bottom: 15px;
 }
+
+
 
 .gallery h1 {
   display: flex;
@@ -571,6 +649,13 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .gallery h5 {
+    text-align: center;
+    font-size: 60px;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .gallery {
     padding: 20px;
@@ -578,6 +663,7 @@ img {
 
   .gallery h5 {
     text-align: center;
+    font-size: 40px;
   }
 }
 
@@ -621,48 +707,44 @@ img {
   color: #e0a196;
 }
 
-/* top of the page icon */
-/* .top-page {
-  padding: 30px; 
-} */
 
 .totop {
   position: fixed;
-
+  bottom: 40px;
+  right: 40px;
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
 }
 
-/* .top-page .row {
-  text-align: end;
-} */
+.fa-chevron-circle-up {
+  color: rgb(221, 51, 130);
+}
+
+.hidden {
+  display: none;
+}
+
 
 @media screen and (max-width: 576px) {
   .top-page .row {
     text-align: center;
   }
+
+  .totop {
+    font-size: 35px;
+    right: 20px;
+  }
 }
 
-/* .page-up-icon {
-  color: #6a2a1d;
-  font-size: 60px;
-  text-decoration: none;
-  position: relative;
-  top: 0;
-  transition: top ease 0.5s;
-}
-
-.page-up-icon:hover {
-  color: #551f14;
-  top: -10px;
-} */
 
 footer {
-  background: #6a2a1d;
-  color: white;
+  color: rgb(236, 235, 235);
 }
 
 footer a {
   text-decoration: none;
-  color: white;
+  color: rgb(236, 235, 235);
 }
 
 footer a:hover {
@@ -673,8 +755,46 @@ footer a:hover {
   overflow: hidden;
 }
 
+@media screen and (max-width: 992px) {
+  footer .email {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .email {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer #footer-content {
+    padding-top: 15px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   #google {
     overflow: hidden;
+  }
+
+  .socials .insta {
+    font-size: 30px;
+    
+  }
+  
+  .socials .tiktok {
+    font-size: 25px;
+   
+  }
+  
+  .socials .facebook {
+    font-size: 50px;
+   
+  }
+
+  .totop {
+    font-size: 35px;
+    right: 0;
   }
 }
