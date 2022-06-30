@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 
 
-.shadow {
-  box-shadow: 0 0 0 15px;
-}
 
 .contact-me {
   padding: 50px;
@@ -19,6 +16,16 @@
   padding: 20px;
 }
 
+.phone a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.phone a:hover {
+  text-decoration: underline;
+}
+
+
 .google {
   margin-top: 20px;
 }
@@ -28,12 +35,14 @@ form {
 }
 
 form .btn {
-  background-color: #6a2a1d;
+  background-color: #e0b9b2;
   border: none;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 form .btn:hover {
-  background-color: #6a2a1d;
+  background-color: #e0a196;
   color: #fff;
 }
 

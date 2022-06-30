@@ -1,6 +1,9 @@
 const btn = document.querySelector('#book-btn');
 let nav = document.querySelector('nav');
-let iconUp = document.querySelector('totop');
+let iconUp = document.querySelector('.totop');
+let toggler = document.querySelector('.navbar-toggler');
+const collapse = document.querySelector('.navbar-collapse');
+
 
 
 
@@ -11,8 +14,17 @@ window.addEventListener('scroll', function() {
         iconUp.classList.remove('d-none');
     }else {
         nav.classList.remove('bg-dark', 'bg-gradient', 'shadow');
-        
+        iconUp.classList.add('d-none');
     }
+})
+
+toggler.addEventListener('click', function() {
+    nav.classList.add('bg-dark', 'bg-gradient', 'shadow'); 
+
+    if(toggler.classList.contains('collapsed') && window.pageYOffset <= 100) {
+        nav.classList.remove('bg-dark', 'bg-gradient', 'shadow');
+    }
+    
 })
 
 

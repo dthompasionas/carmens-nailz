@@ -40,6 +40,7 @@
 
 .choose-me {
   padding: 70px;
+  margin-bottom: 70px;
 }
 
 .choose-me .card {
@@ -61,6 +62,7 @@
   margin: 0;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  
 }
 
 .choose-me .front {
@@ -76,7 +78,7 @@
 }
 
 .choose-me .back {
-  background-color:#292b2c;
+  background-color:#212529 ;
   color: #fff;
   height: 250px;
   display: flex;

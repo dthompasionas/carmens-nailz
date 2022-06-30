@@ -43,12 +43,13 @@
   border-radius: 0px;
   border: 2px solid #e0b9b2;
   cursor: pointer;
+  transition: 200ms ease;
 }
 
 #menu-filters ul li a:hover {
   background: #e0b9b2;
   color: #fff;
-  border: 2px;
+  border: 3px solid #e0b9b2 ;
 }
 
 .menu p {
@@ -64,11 +65,12 @@
 }
 
 .menu .first {
-  background: #292b2c;
+  background: #e0b9b2;
   border: none;
   padding: 5px 10px 5px 10px;
   width: 150px;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 500;
   color: #fff;
   transition: transform .5s ease;
 }
@@ -94,7 +96,7 @@
 }
 
 .menu .first:hover {
-  background: #a13b26;
+  background: #df8474;
   color: #fff;
 }
 
@@ -108,7 +110,7 @@
 
 .menu .third:hover {
     color: white;
-    background: #a13b26;
+    background: #df8474;
 }
 
 .menu-restaurant {
