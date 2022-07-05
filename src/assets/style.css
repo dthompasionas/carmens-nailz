@@ -306,12 +306,6 @@ h1 {
   }
 }
 
-/* @media screen and (max-width: 414px) {
-   #aboutme {
-      padding: 20px;
-      text-align: center;
-   }
-} */
 
 /* services */
 
@@ -434,40 +428,15 @@ h1 {
   height: 100%;
 }
 
-.custom-shape-divider-top-1655953427 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+.index-1 h2 {
+  font-size: 45px;
+  text-shadow: 3px 3px 5px rgb(41, 41, 41);
 }
 
-.custom-shape-divider-top-1655953427 svg {
-  position: relative;
-  display: block;
-  width: calc(112% + 1.3px);
-  height: 62px;
-}
-
-.custom-shape-divider-top-1655953427 .shape-fill {
-  fill: rgb(236, 235, 235);
-}
-
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .custom-shape-divider-top-1655953427 svg {
-      width: calc(108% + 1.3px);
-      height: 69px;
-  }
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .custom-shape-divider-top-1655953427 svg {
-      width: calc(102% + 1.3px);
-      height: 28px;
-  }
+.index-1 #nails {
+  font-family: "dancing script", cursive;
+  margin-left: 12px;
+  font-size: 65px;
 }
 
 

@@ -4,7 +4,10 @@
 .services-hero {
   margin-top: 140px;
   padding: 20px;
-  background-color: #e0b9b2;
+  /* background-color: #e0b9b2; */
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/src/assets/images/Flower-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -38,10 +41,10 @@
 #menu-filters ul li a {
   padding: 10px 20px;
   font-size: 17px;
-  color: #e0b9b2;
+  color: #212529;
   text-decoration: none;
   border-radius: 0px;
-  border: 2px solid #e0b9b2;
+  border: 2px solid #212529;
   cursor: pointer;
   transition: 200ms ease;
 }
@@ -49,7 +52,7 @@
 #menu-filters ul li a:hover {
   background: #e0b9b2;
   color: #fff;
-  border: 3px solid #e0b9b2 ;
+  border: 2px solid #212529 ;
 }
 
 .menu p {
