@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 
-
+/* contact me section */
 
 .contact-me {
   padding: 50px;
 }
 
-.email {
+.email-section {
   background: #fff;
   padding: 20px;
 }
@@ -24,7 +24,6 @@
 .phone a:hover {
   text-decoration: underline;
 }
-
 
 .google {
   margin-top: 20px;
@@ -44,6 +43,18 @@ form .btn {
 form .btn:hover {
   background-color: #e0a196;
   color: #fff;
+}
+
+.reach h6 {
+  font-size: 20px;
+}
+
+.schedule p {
+  font-weight: 500;
+}
+
+.schedule span {
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1400px) {
@@ -85,4 +96,3 @@ form .btn:hover {
     padding: 10px;
   }
 }
-

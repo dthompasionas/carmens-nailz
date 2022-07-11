@@ -1,19 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 
-
+/* page title */
 .services-hero {
   margin-top: 140px;
   padding: 20px;
   /* background-color: #e0b9b2; */
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/src/assets/images/Flower-background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/src/assets/images/Flower-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
 @media screen and (max-width: 992px) {
   .services-hero {
-    
   }
 }
 
@@ -52,7 +51,7 @@
 #menu-filters ul li a:hover {
   background: #e0b9b2;
   color: #fff;
-  border: 2px solid #212529 ;
+  border: 2px solid #212529;
 }
 
 .menu p {
@@ -62,7 +61,7 @@
 }
 
 .btn:focus {
-  background: #6a2a1d;
+  background: #e0a196;
   border: none;
   box-shadow: none;
 }
@@ -75,7 +74,7 @@
   font-size: 18px;
   font-weight: 500;
   color: #fff;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 
 .menu .first:hover {
@@ -99,21 +98,21 @@
 }
 
 .menu .first:hover {
-  background: #df8474;
+  background: #e0a196;
   color: #fff;
 }
 
 #menu-filters .modal-policies li {
-    text-transform: none;
+  text-transform: none;
 }
 
 .menu .third {
-    background: #e0b9b2;
+  background: #e0b9b2;
 }
 
 .menu .third:hover {
-    color: white;
-    background: #df8474;
+  color: white;
+  background: #e0a196;
 }
 
 .menu-restaurant {
@@ -130,8 +129,6 @@
 }
 
 @media screen and (max-width: 414px) {
-  
-
   ul {
     padding: 0;
   }

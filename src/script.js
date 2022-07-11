@@ -7,6 +7,9 @@ const collapse = document.querySelector('.navbar-collapse');
 
 
 
+
+
+
 // adding a the change of the navbar background on scroll
 window.addEventListener('scroll', function() {
     if(window.pageYOffset > 100) {
@@ -18,7 +21,9 @@ window.addEventListener('scroll', function() {
     }
 })
 
+// adding a different background color to the background when mobile menu clicked
 toggler.addEventListener('click', function() {
+
     nav.classList.add('bg-dark', 'bg-gradient', 'shadow'); 
 
     if(toggler.classList.contains('collapsed') && window.pageYOffset <= 100) {
