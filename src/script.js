@@ -21,16 +21,6 @@ window.addEventListener('scroll', function() {
     }
 })
 
-// adding a different background color to the background when mobile menu clicked
-toggler.addEventListener('click', function() {
-
-    nav.classList.add('bg-dark', 'bg-gradient', 'shadow'); 
-
-    if(toggler.classList.contains('collapsed') && window.pageYOffset <= 100) {
-        nav.classList.remove('bg-dark', 'bg-gradient', 'shadow');
-    }
-    
-})
 
 
 // script to make the hero button animation work

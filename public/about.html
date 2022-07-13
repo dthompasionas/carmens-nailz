@@ -26,12 +26,14 @@
           ><img src="/src/assets/images/cn-icon.png" alt=""
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarMenu"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto">
@@ -114,47 +116,55 @@
 
     <!-- why choose me -->
     <section class="choose-me ">
-      <div class="container">
+      <div class="container" id="choose-me-cont">
         <div class="row g-4">
           <h1>Why Choose me</h1>
           <div class="col-lg-3 col-md-6" id="card-container">
             <div class="card">
-              <figure class="front">
-                <h2>Cleanliness</h2>
-              </figure>
-              <figure class="back">
-                <p>I make sure to keep a clean and safe environment to ensure a great experience for my clients.</p>
-              </figure>
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h2>Cleanliness</h2>
+                </div>
+                <div class="flip-card-back">
+                  <p>I make sure to keep a clean and safe environment to ensure a great experience for my clients.</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6" id="card-container">
             <div class="card">
-              <figure class="front">
-                <h2>Quality</h2>
-              </figure>
-              <figure class="back">
-                <p>I cater to my clients with sustainable methods that I've learned over time to ensure longevity and quality for your nails.</p>
-              </figure>
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h2>Quality</h2>
+                </div>
+                <div class="flip-card-back">
+                  <p>I cater to my clients with sustainable methods that I've learned over time to ensure longevity and quality for your nails.</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6" id="card-container">
             <div class="card">
-              <figure class="front">
-                <h2>Professional</h2>
-              </figure>
-              <figure class="back">
-                <p>Making sure my clients are treated correctly and fairly is something I pride myself in. I offer trust and loyalty to anyone who steps in.</p>
-              </figure>
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h2>Professional</h2>
+                </div>
+                <div class="flip-card-back">
+                  <p>Making sure my clients are treated correctly and fairly is something I pride myself in. I offer trust and loyalty to anyone who steps in.</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6" id="card-container">
             <div class="card">
-              <figure class="front">
-                <h2>Creative</h2>
-              </figure>
-              <figure class="back">
-                <p>I listen to my client's request and translate it into a stunning finished product by using multiple colors and textures.</p>
-              </figure>
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h2>Creative</h2>
+                </div>
+                <div class="flip-card-back">
+                  <p>I listen to my client's request and translate it into a stunning finished product by using multiple colors and textures.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -47,53 +47,65 @@
 }
 
 .choose-me .card {
+  background-color: transparent;
+  height: 250px;
   border: none;
   border-radius: 11px;
-  text-align: center;
-  overflow-x: visible;
-  transition: transform 1s ease-in-out;
   transform-style: preserve-3d;
-  box-shadow: 3px 3px 6px rgb(32, 32, 32);
+  perspective: 1000px;
+}
+ 
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
 }
 
-#card-container:hover .card {
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.choose-me .card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.choose-me figure {
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  margin: 0;
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
-.choose-me .front {
-  background-color: #e0b9b2ea;
+/* Style the front side */
+.flip-card-front {
+  background: linear-gradient(#fae7e3ea, #ee9c8dea);
   color: #fff;
-  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-shadow: 2px 2px 5px rgb(92, 92, 92);
+  padding: 50px;
+  cursor: pointer;
   font-family: "dancing script", cursive;
-  padding: 50px;
-  cursor: pointer;
 }
 
-.choose-me .back {
-  background-color: #212529;
+/* Style the back side */
+.flip-card-back {
+  background: linear-gradient(#212529, #484c50);
   color: #fff;
-  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
-  font-size: 18px;
-  position: absolute;
-  transform: rotateY(180deg);
+  padding: 30px;
   cursor: pointer;
+  transform: rotateY(180deg);
 }
+
 
 .choose-me h1 {
   text-align: center;
@@ -118,7 +130,7 @@
     padding-bottom: 40px;
   }
 
-  .choose-me .back {
+  .flip-card-back {
     font-size: 15px;
   }
 }
@@ -138,11 +150,11 @@
     padding-bottom: 40px;
   }
 
-  .choose-me .front h2 {
+  .flip-card-front h2 {
     font-size: 40px;
   }
 
-  .choose-me .back {
+  .flip-card-back {
     font-size: 17px;
   }
 }
@@ -203,13 +215,13 @@
     padding-bottom: 40px;
   }
 
-  .choose-me .front h2 {
+  .flip-card-front h2 {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 280px) {
-  .choose-me .back {
+  .flip-card-back {
     font-size: 15px;
   }
 }

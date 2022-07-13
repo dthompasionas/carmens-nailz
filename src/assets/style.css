@@ -23,82 +23,6 @@ h1 {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* test nav */
-/* .nav {
-  padding: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-  
-}
-
-.navigation {
-  display: none;
-}
-
-.active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #212529;
-}
-
-.active a {
-  padding: 20px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.navbar-toggler-icon a img {
-  filter: invert(1);
-}
-
-.hide {
-  display: none;
-}
-
-.close {
-  display: none;
-}
-
-.show {
-  display: flex;
-}
-
-@media only screen and (min-width: 991px) {
-  .nav {
-    padding: 20px 80px;
-  }
- 
-  .navigation {
-    display: flex;
-  }
-
-  .navigation a {
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 20px;
-
-  }
-
-  .navbar-toggler-icon {
-    display: none;
-  }
-} */
-
-/* end test nav */
-
 .navbar {
   left: 0;
   right: 0;
@@ -108,7 +32,7 @@ h1 {
   width: 20px;
   height: 10px;
   position: relative;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .navbar-toggler,
@@ -136,13 +60,12 @@ h1 {
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
-  transition: .25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .middle-bar {
   margin-top: 0px;
 }
-
 
 /* State when the navbar is collapsed */
 
@@ -183,7 +106,6 @@ h1 {
   transform: rotate(-135deg);
 }
 
-
 .nav-link {
   color: rgb(236, 235, 235);
   font-size: 20px;
@@ -218,7 +140,7 @@ h1 {
 @media screen and (max-width: 992px) {
   .navbar {
     background: #212529;
-    background-image: var(--bs-gradient)!important;
+    background-image: var(--bs-gradient) !important;
   }
 
   .nav-link {
@@ -367,7 +289,6 @@ h1 {
 
   .hero #book-btn {
     margin-bottom: 0px;
-    
   }
 }
 
@@ -596,6 +517,7 @@ h1 {
   height: 40vh;
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .index-1 .container {
@@ -752,6 +674,7 @@ h1 {
   height: 40vh;
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Gallery */
@@ -905,6 +828,7 @@ footer a {
 
 footer a:hover {
   color: white;
+  text-decoration: underline;
 }
 
 #google {
