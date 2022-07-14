@@ -84,10 +84,13 @@
                 method="POST"
               >
                 <!-- Honeypot (catch spam) -->
-                <input type="text" name="_honey" style="display: none" id="" />
+                <input type="text" name="_honey" style="display: none" />
 
                 <!-- disable captcha -->
                 <input type="hidden" name="_captcha" value="false" />
+
+                <!-- thank you page -->
+                <input type="hidden" name="_next" value="https://carmensnailz.com/thanks.html">
 
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label"
