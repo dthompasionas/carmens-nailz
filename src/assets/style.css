@@ -188,10 +188,10 @@ h1 {
   margin-bottom: 120px;
   color: rgb(236, 235, 235);
   font-size: 30px;
+  font-weight: bold;
   border: none;
   box-shadow: none;
-  position: relative;
-  overflow: hidden;
+  transition: 0.2s ease-in-out;
 }
 
 .hero #book-btn span {
@@ -199,21 +199,10 @@ h1 {
   z-index: 1;
 }
 
-.hero #book-btn::before {
-  content: "";
-  position: absolute;
-  top: var(--y);
-  left: var(--x);
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: rgb(236, 235, 235);
-  transition: width 0.5s, height 0.5s;
-}
-
 .hero #book-btn:hover {
   color: rgb(231, 75, 148);
+  background-color: #fff;
+  border: none;
 }
 
 .hero #book-btn:hover::before {
@@ -269,7 +258,7 @@ h1 {
 
 @media screen and (max-width: 988px) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
       url(/src/assets/images/room-light.jpg);
     background-position: top;
   }
@@ -294,7 +283,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
       url(/src/assets/images/room-light.jpg);
     background-position: top;
   }
@@ -347,21 +336,21 @@ h1 {
 }
 
 .about h1 {
-  color: #e0b9b2;
+  color: #e6a498;
   font-size: 80px;
   font-family: "dancing script", cursive;
   text-align: center;
 }
 
 .about p {
-  color: #e0b9b2;
+  color: #e4b7af;
   font-size: 20px;
   font-weight: 400;
 }
 
 .about a {
   float: right;
-  background-color: #e0b9b2;
+  background-color: #e0b2aa;
   color: rgb(236, 235, 235);
   border: none;
 }
@@ -535,7 +524,12 @@ h1 {
   font-size: 65px;
 }
 
-@media screen and (max-width: 514px) {
+@media screen and (max-width: 576px) {
+
+  .index-1 {
+    display: none;
+  }
+
   .index-1 .container {
     text-align: center;
   }
@@ -677,6 +671,11 @@ h1 {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 576px) {
+  .index-2 {
+    display: none;
+  }
+}
 /* Gallery */
 
 .gallery {
@@ -819,6 +818,10 @@ img {
 /* footer */
 footer {
   color: rgb(236, 235, 235);
+}
+
+footer h6 {
+  font-weight: bold;
 }
 
 footer a {
