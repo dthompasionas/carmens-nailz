@@ -26,7 +26,7 @@ not taking submissions at this time
 
 # Screenshot:
 
-![](/src/assets/images/readme-img/carmensnailz.com-fullscreen.png)
+![](src/assets/images/readme-img/carmensnailz.com-fullscreen.png)
 
 # Questions
 Contact me with any questions here:
