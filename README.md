@@ -24,9 +24,9 @@ The following necessary dependencies are required to run this app: n/a
 # Contribute
 not taking submissions at this time
 
-#Screenshot:
+# Screenshot:
 
-![](carmensnailz-fullscreen.png)
+![](/src/assets/images/readme-img/carmensnailz.com-fullscreen.png)
 
 # Questions
 Contact me with any questions here:
