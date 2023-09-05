@@ -332,7 +332,7 @@ h1 {
 
 /* About section */
 .about {
-  padding: 150px 169px;
+  padding: 120px 169px;
 }
 
 .about h1 {
@@ -343,7 +343,7 @@ h1 {
 }
 
 .about p {
-  color: #e4b7af;
+  color: rgba(0, 0, 0, 0.527);
   font-size: 20px;
   font-weight: 400;
 }
@@ -399,6 +399,7 @@ h1 {
 
 .services {
   padding: 50px;
+  height: 400px;
 }
 
 .services .card {
@@ -408,14 +409,14 @@ h1 {
   transition: 100ms ease-in;
 }
 
-.services h3 {
-  font-family: "dancing script", cursive;
-  font-size: 40px;
-}
-
 .services .card:hover {
   margin-top: 5px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.services h3 {
+  font-family: "dancing script", cursive;
+  font-size: 40px;
 }
 
 .services #service {
@@ -525,7 +526,6 @@ h1 {
 }
 
 @media screen and (max-width: 576px) {
-
   .index-1 {
     display: none;
   }

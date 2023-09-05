@@ -16,7 +16,7 @@
 }
 
 .about-content p {
-  color: #e6a498;
+  color: rgba(0, 0, 0, 0.527);
   line-height: 2rem;
   font-size: 18px;
   font-weight: 500;
@@ -175,10 +175,6 @@
   .choose-me {
     padding: 30px;
     padding-bottom: 40px;
-  }
-
-  .flip-card-inner {
-    transition: transform 0.2s;
   }
 }
 
